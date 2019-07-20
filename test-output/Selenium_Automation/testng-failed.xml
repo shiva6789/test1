@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Selenium_Automation]" parallel="methods">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="http://demo.opencart.com"/>
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="TestNG.grid">
+        <methods>
+          <include name="f"/>
+          <include name="f2"/>
+        </methods>
+      </class> <!-- TestNG.grid -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Selenium_Automation] -->
